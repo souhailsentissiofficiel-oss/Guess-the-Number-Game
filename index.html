@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Guess Game</title>
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+
+<div class="container fade-in">
+
+<h1>🎯 Guess the Number</h1>
+
+<input type="number" id="guessInput">
+
+<button onclick="sendGuess()">Guess</button>
+
+<p id="message"></p>
+
+</div>
+
+<script src="{{ url_for('static', filename='script.js') }}"></script>
+
+</body>
+</html>
